@@ -18,6 +18,17 @@ export const GlobalStyles = StyleSheet.create({
         borderWidth: Tamanio.botonBorderWidth,
         borderRadius:Tamanio.botonRadius,
     },
+    botonNumero: {
+        width:Tamanio.botonWidth,
+        textAlign: 'center',
+        backgroundColor:Color.colorBotonNumero,
+        padding: Tamanio.botonPadding,
+        fontSize: Tamanio.botonFontSize,
+        fontWeight: Tamanio.botonFontWeigth,
+        borderColor: Color.bordeColor,
+        borderWidth: Tamanio.botonBorderWidth,
+        borderRadius:Tamanio.botonRadius,
+    },
     container: {
         flex: 1,
         backgroundColor: Color.fondo,
