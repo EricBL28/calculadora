@@ -14,10 +14,7 @@ export default function App() {
     formula, numeroAnterior, construirNumero, clean,
     cambiarSigno,
     borrarDigito,
-    operacionDividir,
-    operacionMultiplicar,
-    operacionRestar,
-    operacionSumar,
+    operaciones,Operadores,
     resultado,
   } = useCalculadora();
 
@@ -26,25 +23,25 @@ export default function App() {
       { label: 'C', color: 'otro', onPress: clean },
       { label: '+/-', color: 'otro', onPress: cambiarSigno },
       { label: 'del', color: 'otro', onPress: borrarDigito },
-      { label: '/', color: 'operacion', onPress: operacionDividir },
+      { label: '/', color: 'operacion', onPress: ()=> operaciones(Operadores.dividir )},
     ],
     [
       { label: '7', color: 'numero', onPress: () => construirNumero('7') },
       { label: '8', color: 'numero', onPress: () => construirNumero('8') },
       { label: '9', color: 'numero', onPress: () => construirNumero('9') },
-      { label: 'x', color: 'operacion', onPress: operacionMultiplicar },
+      { label: 'x', color: 'operacion', onPress: ()=> operaciones(Operadores.multiplicar )},
     ],
     [
       { label: '4', color: 'numero', onPress: () => construirNumero('4') },
       { label: '5', color: 'numero', onPress: () => construirNumero('5') },
       { label: '6', color: 'numero', onPress: () => construirNumero('6') },
-      { label: '-', color: 'operacion', onPress: operacionRestar },
+      { label: '-', color: 'operacion', onPress: ()=> operaciones(Operadores.restar )},
     ],
     [
       { label: '1', color: 'numero', onPress: () => construirNumero('1') },
       { label: '2', color: 'numero', onPress: () => construirNumero('2') },
       { label: '3', color: 'numero', onPress: () => construirNumero('3') },
-      { label: '+', color: 'operacion', onPress: operacionSumar },
+      { label: '+', color: 'operacion', onPress: ()=> operaciones(Operadores.sumar )},
     ],
     [
       { label: '0', color: 'numero', width: 180, onPress: () => construirNumero('0') },
