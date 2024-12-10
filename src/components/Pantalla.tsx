@@ -1,5 +1,6 @@
-import { Text, type TextProps, StyleSheet } from 'react-native';
+import { Text, type TextProps } from 'react-native';
 import { GlobalStyles } from '../Themes/GlobalSyles';
+
 
 interface Props extends TextProps {
   tamanio: 'grande' | 'peque';

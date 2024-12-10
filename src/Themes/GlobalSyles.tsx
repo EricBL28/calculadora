@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import { Color } from "./Colors";
 import { Tamanio } from "./Tamanios";
+import { BotonOperacion } from "../components/BotonOperacion";
 
 export const GlobalStyles = StyleSheet.create({
     pantallaPrincipal: {
@@ -9,25 +10,13 @@ export const GlobalStyles = StyleSheet.create({
         width: Tamanio.pantallaPrinciapalWidth,
     },
     pantallaSecundaria: {
-        fontSize: 55,
+        fontSize: Tamanio.pantallaSecundariaFontSize,
         textAlign: 'right',
-        width: '90%',
-        color: Color.fondoPantallaSecudanria,
+        width: Tamanio.pantallaSecundariaWidth,
     },
     boton: {
         width:Tamanio.botonWidth,
         textAlign: 'center',
-        padding: Tamanio.botonPadding,
-        fontSize: Tamanio.botonFontSize,
-        fontWeight: Tamanio.botonFontWeigth,
-        borderColor: Color.bordeColor,
-        borderWidth: Tamanio.botonBorderWidth,
-        borderRadius:Tamanio.botonRadius,
-    },
-    botonNumero: {
-        width:Tamanio.botonWidth,
-        textAlign: 'center',
-        backgroundColor:Color.colorBotonNumero,
         padding: Tamanio.botonPadding,
         fontSize: Tamanio.botonFontSize,
         fontWeight: Tamanio.botonFontWeigth,
@@ -56,6 +45,15 @@ export const GlobalStyles = StyleSheet.create({
     resultado: {
         fontSize: 48, 
         marginBottom: 20, 
+    },
+    botonNumero: {
+        backgroundColor:Color.colorBotonNumero,
+    },
+    BotonOperacion:{
+        backgroundColor:Color.colorBotonOperacion,
+    },
+    BotonOtro:{
+        backgroundColor:Color.colorBotonOtro,
     },
   });
   

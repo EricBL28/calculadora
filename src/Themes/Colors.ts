@@ -1,11 +1,12 @@
 
 export const Color={
     
-    fondo:'#bbbbff',
-    bordeColor:'#000',
+    fondo:'#7F58A3',
+    bordeColor:'#FFFFFF',
     fondoPantalla:'#ffbbbb',
-    fondoPantallaSecudanria:'#fff',
+    
 
-    colorBotonNumero:'#ffbbbb',
-    colorBotonOperacion:'#ffbbbb'
+    colorBotonNumero:'#A1DCC4',
+    colorBotonOperacion:'#C199DB',
+    colorBotonOtro: '#C7B38E'
 }as const;

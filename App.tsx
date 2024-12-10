@@ -4,7 +4,6 @@ import { Pantalla } from './src/components/Pantalla';
 import { BotonOperacion } from './src/components/BotonOperacion';
 import { useCalculadora } from './src/hooks/useCalculadora';
 import { GlobalStyles } from './src/Themes/GlobalSyles';
-import { Tamanio } from './src/Themes/Tamanios';
 
 export default function App() {
 
@@ -25,33 +24,33 @@ export default function App() {
       <StatusBar style="auto" />
 
       <View style={GlobalStyles.fila}>
-        <BotonOperacion label='C' width={80} onPress={clean}></BotonOperacion>
-        <BotonOperacion label='+/-' width={80} onPress={cambiarSigno}></BotonOperacion>
-        <BotonOperacion label='del' width={80} onPress={borrarDigito}></BotonOperacion>
-        <BotonOperacion label='/' width={80} onPress={operacionDividir}></BotonOperacion>
+        <BotonOperacion label='C' color = 'otro' onPress={clean}></BotonOperacion>
+        <BotonOperacion label='+/-' color ='otro' onPress={cambiarSigno}></BotonOperacion>
+        <BotonOperacion label='del' color = 'otro' onPress={borrarDigito}></BotonOperacion>
+        <BotonOperacion label='/' color ='operacion' onPress={operacionDividir}></BotonOperacion>
       </View>
       <View style={GlobalStyles.fila}>
-        <BotonOperacion label='7' width={80} onPress={() => construirNumero('7')}></BotonOperacion>
-        <BotonOperacion label='8' width={80} onPress={() => construirNumero('8')}></BotonOperacion>
-        <BotonOperacion label='9' width={80} onPress={() => construirNumero('9')}></BotonOperacion>
-        <BotonOperacion label='x' width={80} onPress={operacionMultiplicar}></BotonOperacion>
+        <BotonOperacion label='7' color ='numero' onPress={() => construirNumero('7')}></BotonOperacion>
+        <BotonOperacion label='8' color ='numero' onPress={() => construirNumero('8')}></BotonOperacion>
+        <BotonOperacion label='9' color ='numero' onPress={() => construirNumero('9')}></BotonOperacion>
+        <BotonOperacion label='x' color ='operacion' onPress={operacionMultiplicar}></BotonOperacion>
       </View>
       <View style={GlobalStyles.fila}>
-        <BotonOperacion label='4' width={80} onPress={() => construirNumero('4')}></BotonOperacion>
-        <BotonOperacion label='5' width={80} onPress={() => construirNumero('5')}></BotonOperacion>
-        <BotonOperacion label='6' width={80} onPress={() => construirNumero('6')}></BotonOperacion>
-        <BotonOperacion label='-' width={80} onPress={operacionRestar}></BotonOperacion>
+        <BotonOperacion label='4' color ='numero' onPress={() => construirNumero('4')}></BotonOperacion>
+        <BotonOperacion label='5' color ='numero' onPress={() => construirNumero('5')}></BotonOperacion>
+        <BotonOperacion label='6' color ='numero' onPress={() => construirNumero('6')}></BotonOperacion>
+        <BotonOperacion label='-' color ='operacion' onPress={operacionRestar}></BotonOperacion>
       </View>
       <View style={GlobalStyles.fila}>
-        <BotonOperacion label='1' width={80} onPress={() => construirNumero('1')}></BotonOperacion>
-        <BotonOperacion label='2' width={80} onPress={() => construirNumero('2')}></BotonOperacion>
-        <BotonOperacion label='3' width={80} onPress={() => construirNumero('3')}></BotonOperacion>
-        <BotonOperacion label='+' width={80} onPress={operacionSumar}></BotonOperacion>
+        <BotonOperacion label='1' color ='numero' onPress={() => construirNumero('1')}></BotonOperacion>
+        <BotonOperacion label='2' color ='numero' onPress={() => construirNumero('2')}></BotonOperacion>
+        <BotonOperacion label='3' color ='numero' onPress={() => construirNumero('3')}></BotonOperacion>
+        <BotonOperacion label='+' color ='operacion' onPress={operacionSumar}></BotonOperacion>
       </View>
       <View style={GlobalStyles.fila}>
-        <BotonOperacion label='0' width={180} onPress={() => construirNumero('0')}></BotonOperacion>
-        <BotonOperacion label='.' width={80} onPress={() => construirNumero('.')}></BotonOperacion>
-        <BotonOperacion label='=' width={80} onPress={resultado}></BotonOperacion>
+        <BotonOperacion label='0' width={180}  color ='numero' onPress={() => construirNumero('0')}></BotonOperacion>
+        <BotonOperacion label='.' color ='numero' onPress={() => construirNumero('.')}></BotonOperacion>
+        <BotonOperacion label='=' color ='operacion' onPress={resultado}></BotonOperacion>
       </View>
     </View>
 
