@@ -5,6 +5,6 @@ export const Color={
     fondoPantalla:'#ffbbbb',
 
 
-    colorBotonNumero:'#00ff00',
-    colorBotonOperacion:'#ffff00'
+    colorBotonNumero:'#ffbbbb',
+    colorBotonOperacion:'#ffbbbb'
 }as const;
