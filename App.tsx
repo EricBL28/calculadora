@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import {  View } from 'react-native';
 import { Pantalla } from './src/components/Pantalla';
-import { Pantalla2 } from './src/components/Pantalla2';
 import { BotonOperacion } from './src/components/BotonOperacion';
 import { useCalculadora } from './src/hooks/useCalculadora';
 import { GlobalStyles } from './src/Themes/GlobalSyles';
+import { Tamanio } from './src/Themes/Tamanios';
 
 export default function App() {
 
@@ -14,12 +14,12 @@ export default function App() {
   return (
 
     <View style={GlobalStyles.container}>
-      <Pantalla numberOfLines={1} adjustsFontSizeToFit>{formula}</Pantalla>
+      <Pantalla tamanio = 'grande' numberOfLines={1} adjustsFontSizeToFit>{formula}</Pantalla>
 
       {formula === numeroAnterior ? (
-        <Pantalla2 numberOfLines={1} adjustsFontSizeToFit> </Pantalla2>
+        <Pantalla tamanio = 'peque' numberOfLines={1} adjustsFontSizeToFit></Pantalla>
       ) : (
-        <Pantalla2 numberOfLines={1} adjustsFontSizeToFit>{numeroAnterior}</Pantalla2>
+        <Pantalla tamanio = 'peque' numberOfLines={1} adjustsFontSizeToFit>{numeroAnterior}</Pantalla>
       )}
       
       <StatusBar style="auto" />

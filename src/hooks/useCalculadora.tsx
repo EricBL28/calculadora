@@ -110,6 +110,7 @@ export const useCalculadora = () =>{
                 return num1 * num2;
 
             case Operadores.dividir:
+                if (num2 === 0) return "Error";
                 return num1 / num2;
 
             default:

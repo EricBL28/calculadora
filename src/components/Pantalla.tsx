@@ -1,14 +1,15 @@
 import { Text, type TextProps, StyleSheet } from 'react-native';
 import { GlobalStyles } from '../Themes/GlobalSyles';
 
-interface Props extends TextProps {};
+interface Props extends TextProps {
+  tamanio: 'grande' | 'peque';
+};
 
-export const Pantalla = ({children, ...rest}:Props) => {
+export const Pantalla = ({children,tamanio, ...rest}:Props) => {
   return (
-    <Text style={GlobalStyles.pantallaPrincipal} {...rest}>
-        {children}
+    <Text style={tamanio === 'grande' ? GlobalStyles.pantallaPrincipal : GlobalStyles.pantallaSecundaria} 
+        {...rest}>
+      {children}
     </Text>
   )
-}
-
-;
+}  

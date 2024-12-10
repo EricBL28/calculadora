@@ -8,6 +8,12 @@ export const GlobalStyles = StyleSheet.create({
         textAlign: 'right',
         width: Tamanio.pantallaPrinciapalWidth,
     },
+    pantallaSecundaria: {
+        fontSize: 55,
+        textAlign: 'right',
+        width: '90%',
+        color: Color.fondoPantallaSecudanria,
+    },
     boton: {
         width:Tamanio.botonWidth,
         textAlign: 'center',
@@ -42,6 +48,14 @@ export const GlobalStyles = StyleSheet.create({
         marginBottom:Tamanio.filaMarginBottom,
         paddingHorizontal:10,
         width: '100%',
-    }
+    },
+    textoBoton: { 
+        color: '#FFFFFF', 
+        fontSize: 18, 
+    },
+    resultado: {
+        fontSize: 48, 
+        marginBottom: 20, 
+    },
   });
   
