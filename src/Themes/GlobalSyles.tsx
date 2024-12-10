@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import { Color } from "./Colors";
 import { Tamanio } from "./Tamanios";
-import { BotonOperacion } from "../components/BotonOperacion";
+
 
 export const GlobalStyles = StyleSheet.create({
     pantallaPrincipal: {

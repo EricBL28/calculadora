@@ -1,5 +1,3 @@
-import { Pantalla } from "../components/Pantalla";
-
 export const Tamanio={
     pantallaPrincipalFontSize:40,
     pantallaPrinciapalWidth:'90%',
