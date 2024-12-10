@@ -17,5 +17,4 @@ Nombre del autor: Eric Antonio Bermeo Leon
 
 ## Resultado de Abrir el Proyeccto
 
-![Imagen 1: Calculadora con operaciones:](/assets/Captura de pantalla 2024-12-10 221940.png)
-
+![Imagen 1: Calculadora con operaciones:](assets/Captura%20de%20pantalla%202024-12-10%20221940.png)
