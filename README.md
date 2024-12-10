@@ -9,3 +9,13 @@ Nombre del autor: Eric Antonio Bermeo Leon
     ```bash
     npm install
     ```
+2. Para iniciar el proyecto 
+
+    ```bash
+    npm run start
+    ```
+
+## Resultado de Abrir el Proyeccto
+
+![Imagen 1: Calculadora con operaciones:](/assets/Captura de pantalla 2024-12-10 221940.png)
+
